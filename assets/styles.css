@@ -1,0 +1,137 @@
+:root {
+    --primary-color: 90deg, rgb(7, 2, 92) 31%, rgb(10, 66, 94) 100%,
+      rgb(18, 14, 83) 100%, rgb(11, 11, 179) 100%, rgb(0, 255, 191) 100%;
+    --primary-color-dark: 90deg, rgb(17, 0, 36) 31%, rgb(0, 0, 0) 31%,
+      rgb(4, 27, 26) 100%, rgb(14, 1, 45) 100%, rgb(0, 0, 2) 100%,
+      rgb(5, 43, 46) 100%;
+    --primary-color-default: rgb(6, 54, 34);
+    --gray: rgb(156, 154, 154);
+    --white: rgb(255, 255, 255);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .main {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 3fr;
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    background: linear-gradient(var(--primary-color));
+  }
+  
+  .container-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 0 0 20px 0;
+  }
+  
+  .image-eu {
+    width: 50%;
+    height: auto;
+  
+    border: 3px solid black;
+    border-radius: 50%;
+  }
+  
+  .nav-list {
+    text-align: center;
+    list-style: none;
+  }
+  
+  .nav-item {
+    font-size: 20px;
+    margin: 18px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+  }
+  
+  .nav-item I:hover {
+    color: var(--gray);
+    transition: 0.3s;
+  }
+  
+  .selected {
+    font-weight: 500;
+    color: var(--gray);
+  }
+  
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    margin: 0 0 0 20px;
+  }
+  
+  .name {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--primary-color-default);
+  }
+  
+  .data {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color-default);
+    margin: 0 0 55px 0;
+  }
+  
+  .data-on {
+    font-size: 20px;
+  }
+  
+  .links {
+    margin: 60px 0 0 0;
+  }
+  
+  .links a {
+    margin: 0 28px 0 0;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 12px;
+    color: rgb(233, 233, 233);
+    background: linear-gradient(var(--primary-color));
+  }
+  
+  .links a:hover {
+    transition: 0.3s;
+    background: linear-gradient(var(--primary-color-dark));
+  }
+  
+  .list {
+    margin: 0 0 0 28px;
+  }
+  
+  .list li {
+    font-size: 26px;
+    margin: 20px;
+    color: var(--primary-color-default);
+    font-weight: 500;
+  }
+  
+  .list li a {
+    text-decoration: none;
+  }
